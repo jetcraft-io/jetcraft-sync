@@ -1,0 +1,89 @@
+/* 스타일 동기 */
+.jetcraft-comp {
+    font-family: "Pretendard Variable", sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.jetcraft-comp * {
+    font-family: inherit !important;
+}
+
+/* 배포용 글로벌 스타일 */
+.jetcraft-style {
+    --e-global-color-primary: #ffffff;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #51525c;
+    --e-global-color-accent: #f3f3f4;
+}
+
+/* 배포용 다크모드 스타일 */
+.jetcraft-darkmode {
+    background-color: #18181b;
+    --e-global-color-primary: #18181b;
+    --e-global-color-secondary: #3f3f46;
+    --e-global-color-text: #d1d1d6;
+    --e-global-color-accent: #26272b;
+}
+
+/* 엘레멘터 편집화면 불필요 여백 제거 */
+.elementor-edit-area-active .elementor-inline-editing {
+    min-height: 0;
+}
+
+/* 엘레멘터 필수 위젯 초기화 */
+.jetcraft-comp .elementor-widget-icon .elementor-icon-wrapper {
+    line-height: 0;
+}
+.jetcraft-comp .elementor-widget-icon .elementor-icon svg {
+    fill: currentColor;
+}
+
+/* Section 템플릿에서 타이틀 헤더 감춤(리더기 제외) */
+.elementor-editor-active .page-header {
+    visibility: hidden !important;
+    width: 0;
+    height: 0;
+}
+
+/* HTML 위젯 감춤 */
+.jetcraft-settings {
+    display:none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/* 그리드 */
+.jetcraft-testing-grid {
+    visibility: hidden;
+}
+.jetcraft-testing-grid,
+.jetcraft-testing-grid .grid-16,
+.jetcraft-testing-grid .grid-128 {
+    position: absolute;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+.jetcraft-testing-grid .grid-16 {
+    background-image:
+            linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 9px, rgba(27, 31, 36, 0.1), rgba(255, 255, 255, 0) 10px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 9px, rgba(27, 31, 36, 0.1), rgba(255, 255, 255, 0) 10px);
+    background-size: 16px 16px;
+    background-position-x: calc(50% - 1px);
+    background-position-y: -6px;
+}
+.jetcraft-testing-grid .grid-128 {
+    background-image:
+            linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 12px, rgba(27, 31, 36, .08), rgba(255, 255, 255, 0) 13px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 12px, rgba(27, 31, 36, .08), rgba(255, 255, 255, 0) 13px);
+    background-size: 128px 128px;
+    background-position-x: calc(50% - 12px);
+    background-position-y: 13px;
+}
+.elementor-editor-active .jetcraft-testing-grid.on,
+.jetcraft-testing-grid.on-live {
+    visibility: visible;
+}
