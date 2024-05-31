@@ -1,6 +1,9 @@
-/* 스타일 동기 */
+/**
+* 컴포넌트 공통
+*/
+
 .jetcraft-comp {
-    font-family: "Pretendard Variable", sans-serif !important;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
@@ -8,28 +11,194 @@
 .jetcraft-comp * {
     font-family: inherit !important;
 }
+.jetcraft-comp a:link,
+.jetcraft-comp a:hover,
+.jetcraft-comp a:visited,
+.jetcraft-comp a:active {
+    color: var(--jetcraft-primary);
+}
+.jetcraft-comp p {
+    margin: 0;
+    padding: 0;
+}
+.jetcraft-comp input[type=date],
+.jetcraft-comp input[type=email],
+.jetcraft-comp input[type=number],
+.jetcraft-comp input[type=password],
+.jetcraft-comp input[type=search],
+.jetcraft-comp input[type=tel],
+.jetcraft-comp input[type=text],
+.jetcraft-comp input[type=url],
+.jetcraft-comp select,
+.jetcraft-comp textarea {
+    width: 100%;
+    border: initial;
+    border-radius: initial;
+    padding: initial;
+    transition: initial;
+}
 
-/* 배포용 글로벌 스타일 */
-.jetcraft-style {
-    --e-global-color-primary: #ffffff;
+.jetcraft-comp input[type=date]:focus,
+.jetcraft-comp input[type=email]:focus,
+.jetcraft-comp input[type=number]:focus,
+.jetcraft-comp input[type=password]:focus,
+.jetcraft-comp input[type=search]:focus,
+.jetcraft-comp input[type=tel]:focus,
+.jetcraft-comp input[type=text]:focus,
+.jetcraft-comp input[type=url]:focus,
+.jetcraft-comp select:focus,
+.jetcraft-comp textarea:focus {
+    border-color: initial;
+}
+.jetcraft-comp svg {
+    fill: currentColor;
+}
+
+/**
+* Jetcraft 컬러
+*/
+
+[data-jetcraft-theme='dark'] .jetcraft-color-default,
+[data-jetcraft-theme='dark'] .jetcraft-color-violet,
+[data-jetcraft-theme='dark'] .jetcraft-color-blue,
+[data-jetcraft-theme='dark'] .jetcraft-color-purple,
+[data-jetcraft-theme='dark'] .jetcraft-color-olive,
+[data-jetcraft-theme='dark'] .jetcraft-color-orange,
+[data-jetcraft-theme='dark'] .jetcraft-color-magenta,
+[data-jetcraft-theme='dark'] .jetcraft-color-dark {
+    --e-global-color-primary: inherit;
+    --e-global-color-secondary: inherit;
+    --e-global-color-text: inherit;
+    --e-global-color-accent: inherit;
+}
+
+/* Default */
+.jetcraft-color-default {
+    --e-global-color-primary: #0d0c22;
     --e-global-color-secondary: #e7e7e9;
-    --e-global-color-text: #51525c;
-    --e-global-color-accent: #f3f3f4;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #f5f7f7;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
 }
 
-/* 배포용 다크모드 스타일 */
-.jetcraft-darkmode {
-    background-color: #18181b;
-    --e-global-color-primary: #18181b;
+/* Violet */
+.jetcraft-color-violet {
+    --e-global-color-primary: #6366f1;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #6366f11a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Blue */
+.jetcraft-color-blue {
+    --e-global-color-primary: #3b82f6;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #3b82f61a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Purple */
+.jetcraft-color-purple {
+    --e-global-color-primary: #8b5cf6;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #8b5cf61a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Olive */
+.jetcraft-color-olive {
+    --e-global-color-primary: #759d38;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #759d381a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Orange */
+.jetcraft-color-orange {
+    --e-global-color-primary: #ff5000;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #ea64d91a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Magenta */
+.jetcraft-color-magenta {
+    --e-global-color-primary: #d946ef;
+    --e-global-color-secondary: #e7e7e9;
+    --e-global-color-text: #0d0c22;
+    --e-global-color-accent: #d946ef1a;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+}
+
+/* Dark */
+.jetcraft-color-dark {
+    --e-global-color-primary: #9966ff;
     --e-global-color-secondary: #3f3f46;
-    --e-global-color-text: #d1d1d6;
-    --e-global-color-accent: #26272b;
+    --e-global-color-text: #ffffff;
+    --e-global-color-accent: #9966ff1c;
+
+    --jetcraft-primary: var(--e-global-color-primary);
+    --jetcraft-secondary: var(--e-global-color-secondary);
+    --jetcraft-text: var(--e-global-color-text);
+    --jetcraft-accent: var(--e-global-color-accent);
+
+    --jetcraft-custom-bg: #18181b;
+    --jetcraft-custom-text: #d1d1d6;
+    --jetcraft-custom-strong: #fcfcfc;
+
+    background-color: var(--jetcraft-custom-bg);
+    color: var(--jetcraft-custom-text);
+}
+:where(.jetcraft-color-dark) :where(input) {
+    color: var(--jetcraft-custom-text);
+}
+:where(.jetcraft-color-dark) :where(h1, h2, h3, h4, h5, h6, input) {
+    color: var(--jetcraft-custom-strong) !important;
 }
 
-/* 엘레멘터 편집화면 불필요 여백 제거 */
-.elementor-edit-area-active .elementor-inline-editing {
-    min-height: 0;
+:where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp)
+:where(
+.elementor-widget-container
+) {
+    border-radius: 0 !important;
 }
+
+/**
+* Jetcraft 유틸리티
+*/
 
 /* 엘레멘터 필수 위젯 초기화 */
 .jetcraft-comp .elementor-widget-icon .elementor-icon-wrapper {
@@ -39,11 +208,9 @@
     fill: currentColor;
 }
 
-/* Section 템플릿에서 타이틀 헤더 감춤(리더기 제외) */
-.elementor-editor-active .page-header {
-    visibility: hidden !important;
-    width: 0;
-    height: 0;
+/* 엘레멘터 편집화면 불필요 여백 제거 */
+.elementor-edit-area-active .elementor-inline-editing {
+    min-height: 0;
 }
 
 /* HTML 위젯 감춤 */
@@ -54,7 +221,14 @@
     height: 0;
 }
 
-/* 그리드 */
+/* Section 템플릿에서 타이틀 헤더 감춤(리더기 제외) */
+.elementor-editor-active .page-header {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* 그리드 - 배포용 */
 .jetcraft-testing-grid {
     visibility: hidden;
 }
@@ -83,7 +257,7 @@
     background-position-x: calc(50% - 12px);
     background-position-y: 13px;
 }
-.elementor-editor-active .jetcraft-testing-grid.on,
+.jetcraft-testing-grid.on,
 .jetcraft-testing-grid.on-live {
     visibility: visible;
 }
