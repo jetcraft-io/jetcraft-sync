@@ -250,7 +250,7 @@
 .jetcraft-comp .lil-gui.root {
     --background-color: var(--jetcraft-jet-white, #fff);
     --border-radius: 8px;
-    --border: 1px solid var(--jetcraft-secondary);
+    --border: 1px solid var(--jetcraft-secondary, #e7e7e9);
 }
 .jetcraft-comp .lil-gui {
     font-weight: 500;
