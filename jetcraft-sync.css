@@ -189,8 +189,7 @@
     color: var(--jetcraft-custom-strong) !important;
 }
 
-:where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp)
-:where(
+:where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp) :where(
 .elementor-widget-container
 ) {
     border-radius: 0 !important;
