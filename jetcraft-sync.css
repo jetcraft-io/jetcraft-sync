@@ -189,14 +189,16 @@
     color: var(--jetcraft-custom-strong) !important;
 }
 
-:where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp) :where(
+:where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp)
+:where(
 .elementor-widget-container
 ) {
     border-radius: 0 !important;
 }
 
+
 /**
-* Jetcraft 유틸리티
+* 템플릿 유틸리티
 */
 
 /* 엘레멘터 필수 위젯 초기화 */
@@ -225,6 +227,93 @@
     display: none;
     width: 0;
     height: 0;
+}
+
+
+/**
+* 미리보기 유틸리티
+*/
+
+.jetcraft-divider {
+    z-index: 0 !important;
+}
+.jetcraft-divider .elementor-divider {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 16px;
+}
+
+.jet-preview-stage .jetcraft-controller,
+.jetcraft-controller .elementor-element-overlay {
+    display: none;
+}
+
+.jetcraft-comp .lil-gui.root {
+    --background-color: var(--jetcraft-jet-white, #fff);
+    --border-radius: 8px;
+    --border: 1px solid var(--jetcraft-secondary);
+}
+.jetcraft-comp .lil-gui {
+    font-weight: 500;
+    color: var(--text-color);
+    --text-color: var(--jetcraft-text);
+    --title-text-color: var(--jetcraft-text);
+    --widget-color: var(--jetcraft-accent);
+    --hover-color: var(--jetcraft-primary);
+    --focus-color: var(--jetcraft-primary);
+    --number-color: #2cc9ff;
+    --string-color: var(--jetcraft-text);
+    --font-size: 13px;
+    --input-font-size: 11px;
+    --font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    --font-family-mono: Menlo, Monaco, Consolas, "Droid Sans Mono", monospace;
+    --padding: 14px;
+    --spacing: 14px;
+    --widget-height: 30px;
+    --title-height: calc(var(--widget-height) + var(--spacing) * 1.25);
+    --name-width: 30%;
+    --widget-padding: 0 0 0 3px;
+    --widget-border-radius: 4px;
+}
+.jetcraft-comp .lil-gui.root > .title {
+    background: var(--jetcraft-accent);
+    color: var(--title-text-color);
+    border: var(--border);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+.jetcraft-comp .lil-gui.root > .title[aria-expanded='false'] {
+    border-radius: var(--border-radius);
+}
+body:not(.lil-gui-dragging) .lil-gui .title:hover {
+    background: var(--jetcraft-accent);
+    opacity: 1;
+}
+.jetcraft-comp .lil-gui.root > .children {
+    border: var(--border);
+    border-top-width: 0;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+.jetcraft-comp .lil-gui .controller.option .display.focus {
+    color: #fff;
+}
+.jetcraft-comp .lil-gui .controller.string input {
+    color: var(--string-color);
+    padding: 0 8px;
+    border-radius: var(--widget-border-radius);
+}
+.jetcraft-comp .lil-gui input[type=text]:focus, .lil-gui input[type=number]:focus {
+    background: var(--jetcraft-primary);
+    color: #fff;
+}
+.jetcraft-comp .lil-gui .controller.option .widget:hover .display,
+.jetcraft-comp .lil-gui input:hover,
+.jetcraft-comp .lil-gui .controller.string input:hover {
+    color: #fff;
+}
+.jetcraft-comp .lil-gui input[type=checkbox]:focus {
+    box-shadow: inset 0 0 0 1px var(--focus-color);
 }
 
 /* 그리드 - 배포용 */
