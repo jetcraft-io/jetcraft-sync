@@ -11,12 +11,14 @@
 .jetcraft-comp * {
     font-family: inherit !important;
 }
+/*
 .jetcraft-comp a:link,
 .jetcraft-comp a:hover,
 .jetcraft-comp a:visited,
 .jetcraft-comp a:active {
     color: var(--jetcraft-primary);
 }
+ */
 .jetcraft-comp p {
     margin: 0;
     padding: 0;
