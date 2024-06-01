@@ -8,9 +8,10 @@
     font-weight: 500;
     line-height: 1.6;
 }
-.jetcraft-comp * {
+.jetcraft-comp :not(.elementor-element-overlay *) {
     font-family: inherit !important;
 }
+
 /*
 .jetcraft-comp a:link,
 .jetcraft-comp a:hover,
