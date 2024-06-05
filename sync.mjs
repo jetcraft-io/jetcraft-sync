@@ -12,8 +12,14 @@ const guiControllerCallback = (gui) => {
     gui.add( document, 'title' );
 
     gui.add(obj, 'grid').onChange((value) => {
-    	obj.grid = value;
-    	document.querySelector('.jetcraft-testing-grid').classList.toggle('on');
+        obj.grid = value;
+        const grid = document.querySelector('.jetcraft-testing-grid');
+
+        if (obj.grid) {
+            grid.classList.add('on');
+        } else {
+            grid.classList.remove('on');
+        }
     });
 
     gui.add(obj, 'color', ['none', 'default', 'violet', 'blue', 'purple', 'olive', 'orange', 'magenta', 'dark']).onChange((value) => {
