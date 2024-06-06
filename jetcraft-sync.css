@@ -251,20 +251,20 @@
 }
 
 .jetcraft-comp .lil-gui.root {
-    --background-color: var(--jetcraft-custom-bg, #fff);
+    --background-color: var(--jetcraft-custom-bg, transparent);
     --border-radius: 8px;
-    --border: 1px solid var(--jetcraft-secondary);
+    --border: 1px solid var(--jetcraft-secondary, #666);
 }
 .jetcraft-comp .lil-gui {
     font-weight: 500;
     color: var(--text-color);
-    --text-color: var(--jetcraft-text);
-    --title-text-color: var(--jetcraft-text);
-    --widget-color: var(--jetcraft-accent);
-    --hover-color: var(--jetcraft-primary);
-    --focus-color: var(--jetcraft-primary);
+    --text-color: var(--jetcraft-text, #666);
+    --title-text-color: var(--jetcraft-text, #666);
+    --widget-color: var(--jetcraft-accent, transparent);
+    --hover-color: var(--jetcraft-primary, #666);
+    --focus-color: var(--jetcraft-primary, #666);
     --number-color: #2cc9ff;
-    --string-color: var(--jetcraft-text);
+    --string-color: var(--jetcraft-text, #666);
     --font-size: 13px;
     --input-font-size: 11px;
     --font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
@@ -278,7 +278,7 @@
     --widget-border-radius: 4px;
 }
 .jetcraft-comp .lil-gui.root > .title {
-    background: var(--jetcraft-accent);
+    background: var(--jetcraft-accent, transparent);
     color: var(--title-text-color);
     border: var(--border);
     border-top-left-radius: var(--border-radius);
@@ -288,7 +288,7 @@
     border-radius: var(--border-radius);
 }
 body:not(.lil-gui-dragging) .lil-gui .title:hover {
-    background: var(--jetcraft-accent);
+    background: var(--jetcraft-accent, transparent);
     opacity: 1;
 }
 .jetcraft-comp .lil-gui.root > .children {
@@ -296,6 +296,9 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     border-top-width: 0;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+}
+.jetcraft-comp .lil-gui .controller.option .display {
+    border: var(--border);
 }
 .jetcraft-comp .lil-gui .controller.option .display.focus {
     color: #fff;
@@ -306,7 +309,7 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     border-radius: var(--widget-border-radius);
 }
 .jetcraft-comp .lil-gui input[type=text]:focus, .lil-gui input[type=number]:focus {
-    background: var(--jetcraft-primary);
+    background: var(--jetcraft-primary, transparent);
     color: #fff;
 }
 .jetcraft-comp .lil-gui .controller.option .widget:hover .display,
@@ -314,8 +317,9 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
 .jetcraft-comp .lil-gui .controller.string input:hover {
     color: #fff;
 }
+.jetcraft-comp .lil-gui input[type=checkbox],
 .jetcraft-comp .lil-gui input[type=checkbox]:focus {
-    box-shadow: inset 0 0 0 1px var(--focus-color);
+    box-shadow: inset 0 0 0 1px var(--jetcraft-secondary, #666);
 }
 
 /* 그리드 - 배포용 */
