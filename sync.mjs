@@ -2,6 +2,7 @@ let isGuiInitialized = false;
 
 const obj = {
     grid: false,
+    radius: true,
     color: 'none',
 };
 
@@ -20,6 +21,12 @@ const guiControllerCallback = (gui) => {
         } else {
             grid.classList.remove('on');
         }
+    });
+
+    gui.add(obj, 'radius').onChange((value) => {
+        obj.radius = value;
+        const classMethod = !obj.radius ? 'add' : 'remove';
+        previewStage?.classList[classMethod]('jetcraft-no-radius');
     });
 
     gui.add(obj, 'color', ['none', 'default', 'violet', 'blue', 'purple', 'olive', 'orange', 'magenta', 'dark']).onChange((value) => {
