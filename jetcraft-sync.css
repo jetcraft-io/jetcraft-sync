@@ -297,6 +297,7 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     opacity: 1;
 }
 .jetcraft-comp .lil-gui.root > .children {
+    margin-top: 3px;
     border: var(--border);
     border-top-width: 0;
     border-bottom-left-radius: var(--border-radius);
