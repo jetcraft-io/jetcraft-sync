@@ -40,12 +40,14 @@
 .jetcraft-comp select,
 .jetcraft-comp textarea {
     width: 100%;
-    border: initial;
-    border-radius: initial;
+    height: initial;
     padding: initial;
+    border: 1px solid var(--jetcraft-secondary);
+    background-color: transparent;
+    border-radius: initial;
+    box-shadow: initial;
     transition: initial;
 }
-
 .jetcraft-comp input[type=date]:focus,
 .jetcraft-comp input[type=email]:focus,
 .jetcraft-comp input[type=number]:focus,
@@ -58,6 +60,17 @@
 .jetcraft-comp textarea:focus {
     border-color: initial;
 }
+
+.jetcraft-comp input[type="radio"]:checked,
+.jetcraft-comp input[type=reset],
+.jetcraft-comp input[type="checkbox"]:checked,
+.jetcraft-comp input[type="checkbox"]:hover:checked,
+.jetcraft-comp input[type="checkbox"]:focus:checked,
+.jetcraft-comp input[type=range]::-webkit-slider-thumb {
+    border-color: var(--jetcraft-secondary);
+    background-color: var(--jetcraft-accent);
+}
+
 .jetcraft-comp svg {
     fill: currentColor;
 }
@@ -297,7 +310,7 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     opacity: 1;
 }
 .jetcraft-comp .lil-gui.root > .children {
-    margin-top: 3px;
+    padding-top: 3px;
     border: var(--border);
     border-top-width: 0;
     border-bottom-left-radius: var(--border-radius);
