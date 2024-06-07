@@ -3,13 +3,18 @@
 */
 
 .jetcraft-comp {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
 }
-.jetcraft-comp :not(.elementor-element-overlay *) {
-    font-family: inherit !important;
+.jetcraft-comp [class*=" eicon-"],
+.jetcraft-comp [class^=eicon] {
+    display: inline-block;
+    font-family: eicons;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1;
 }
 
 /*
