@@ -342,6 +342,9 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
 .jetcraft-comp .lil-gui input[type=checkbox]:focus {
     box-shadow: inset 0 0 0 1px var(--jetcraft-secondary, #666);
 }
+.jetcraft-comp .lil-gui input[type=checkbox]:hover {
+    color: var(--jetcraft-primary, #0d0c22);
+}
 
 /* 그리드 - 배포용 */
 .jetcraft-testing-grid {
