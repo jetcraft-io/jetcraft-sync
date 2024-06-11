@@ -29,24 +29,26 @@
     margin: 0;
     padding: 0;
 }
-.jetcraft-comp input[type=date],
-.jetcraft-comp input[type=email],
-.jetcraft-comp input[type=number],
-.jetcraft-comp input[type=password],
-.jetcraft-comp input[type=search],
-.jetcraft-comp input[type=tel],
-.jetcraft-comp input[type=text],
-.jetcraft-comp input[type=url],
-.jetcraft-comp select,
-.jetcraft-comp textarea {
+:where(.jetcraft-comp) :where(
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea
+) {
     width: 100%;
     height: initial;
-    padding: initial;
-    border: 1px solid var(--jetcraft-secondary);
+    border: initial;
     background-color: transparent;
     border-radius: initial;
-    box-shadow: initial;
+    padding: initial;
     transition: initial;
+    box-shadow: initial;
 }
 .jetcraft-comp input[type=date]:focus,
 .jetcraft-comp input[type=email]:focus,
@@ -211,7 +213,8 @@
 }
 
 :where(.jetcraft-no-radius.jetcraft-comp, .jetcraft-no-radius .jetcraft-comp) :where(
-.elementor-widget-container
+.elementor-widget-container,
+.elementor-widget-button .elementor-button
 ) {
     border-radius: 0 !important;
 }
