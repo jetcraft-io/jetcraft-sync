@@ -349,6 +349,16 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     color: var(--jetcraft-primary, #0d0c22);
 }
 
+.jetcraft-mock-browser {
+    background-image:
+            url('https://i.ibb.co/bQGGq7x/img-mock-browser-heaer-right.png'),
+            url('https://i.ibb.co/M5y1zwT/img-mock-browser-heaer-left.png'),
+            url('https://i.ibb.co/mF46xHR/img-mock-browser-heaer-bg.png');
+
+    background-position: right top, left top, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+
 /* 그리드 - 배포용 */
 .jetcraft-testing-grid {
     visibility: hidden;
