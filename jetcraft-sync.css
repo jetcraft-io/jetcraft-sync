@@ -325,11 +325,16 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
 .jetcraft-comp .lil-gui .controller.option .display.focus {
     color: #fff;
 }
+.jetcraft-comp .lil-gui label,
+.jetcraft-comp .lil-gui legend {
+    color: var(--text-color);
+}
 .jetcraft-comp .lil-gui .controller.string input {
     color: var(--string-color);
     padding: 0 8px;
     border-radius: var(--widget-border-radius);
     border: 0;
+    background-color: transparent;
     font-size: var(--input-font-size);
 }
 .jetcraft-comp .lil-gui input[type=text]:focus, .lil-gui input[type=number]:focus {
