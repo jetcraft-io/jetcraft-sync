@@ -266,6 +266,9 @@ textarea
     height: 16px;
 }
 
+.jetcraft-controller {
+    margin-bottom: -17px !important;
+}
 .jet-preview-stage .jetcraft-controller,
 .jetcraft-controller .elementor-element-overlay {
     display: none;
@@ -331,6 +334,7 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
 }
 .jetcraft-comp .lil-gui .controller.string input {
     color: var(--string-color);
+    height: var(--widget-height);
     padding: 0 8px;
     border-radius: var(--widget-border-radius);
     border: 0;
