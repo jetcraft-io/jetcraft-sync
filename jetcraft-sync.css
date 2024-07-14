@@ -367,6 +367,9 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
     background-position: right top, left top, left top;
     background-repeat: no-repeat, no-repeat, repeat;
 }
+.jetcraft-color-dark .jetcraft-mock-browser {
+    filter: invert();
+}
 
 /* 그리드 - 배포용 */
 .jetcraft-testing-grid {
