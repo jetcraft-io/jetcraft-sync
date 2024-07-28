@@ -359,6 +359,7 @@ body:not(.lil-gui-dragging) .lil-gui .title:hover {
 }
 
 .jetcraft-mock-browser {
+    background-color: #e1e1e1;
     background-image:
             url('https://i.ibb.co/bQGGq7x/img-mock-browser-heaer-right.png'),
             url('https://i.ibb.co/M5y1zwT/img-mock-browser-heaer-left.png'),
