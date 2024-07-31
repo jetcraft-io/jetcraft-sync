@@ -25,10 +25,17 @@
 	color: var(--jetcraft-primary);
 }
 */
+
 .jetcraft-comp p {
     margin: 0;
     padding: 0;
 }
+
+.jetcraft-comp b,
+.jetcraft-comp strong {
+    font-weight: 600;
+}
+
 :where(.jetcraft-comp) :where(
 input[type=date],
 input[type=email],
