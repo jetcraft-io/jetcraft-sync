@@ -1,3 +1,4 @@
+/* ver 1.0.1 */
 /**
 * 컴포넌트 공통
 */
@@ -211,6 +212,12 @@ textarea
 
     background-color: var(--jetcraft-custom-bg);
     color: var(--jetcraft-custom-text);
+}
+.jetcraft-color-dark a {
+    color: var(--jetcraft-text);
+}
+.jetcraft-color-dark a:hover {
+    color: var(--jetcraft-primary);
 }
 :where(.jetcraft-color-dark) :where(input) {
     color: var(--jetcraft-custom-text);
