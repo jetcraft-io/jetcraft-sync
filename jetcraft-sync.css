@@ -1,4 +1,4 @@
-/* ver 1.0.1 */
+/* ver 1.0.2 */
 /**
 * 컴포넌트 공통
 */
@@ -9,6 +9,16 @@
     font-weight: 400;
     line-height: 1.6;
 }
+
+.jetcraft-comp.e-con,
+.jetcraft-comp .e-con {
+    --container-default-padding-top: 0;
+    --container-default-padding-bottom: 0;
+    --container-default-padding-right: 0;
+    --container-default-padding-left: 0;
+    --gap: 0;
+}
+
 .jetcraft-comp [class*=" eicon-"],
 .jetcraft-comp [class^=eicon] {
     display: inline-block;
