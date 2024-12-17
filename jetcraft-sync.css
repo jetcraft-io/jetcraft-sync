@@ -16,7 +16,9 @@
     --container-default-padding-bottom: 0;
     --container-default-padding-right: 0;
     --container-default-padding-left: 0;
-    --gap: 0;
+    --gap: var(--widgets-spacing, 0);
+    --row-gap: var(--widgets-spacing-row, 0);
+    --column-gap: var(--widgets-spacing-column, 0);
 }
 
 .jetcraft-comp [class*=" eicon-"],
