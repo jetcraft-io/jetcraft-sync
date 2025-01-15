@@ -1,4 +1,4 @@
-/* ver 1.0.4 */
+/* ver 1.0.5 */
 /**
 * 컴포넌트 공통
 */
@@ -303,8 +303,8 @@ textarea
     height: 0;
 }
 
-/* Section 템플릿에서 타이틀 헤더 감춤(리더기 제외) */
-.elementor-editor-active .page-header {
+/* 엘리멘터 타이틀 헤더 감춤(리더기 제외) */
+.site-main > .page-header {
     display: none;
     width: 0;
     height: 0;
