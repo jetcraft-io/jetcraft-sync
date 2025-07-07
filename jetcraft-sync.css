@@ -93,10 +93,6 @@ textarea
     background-color: var(--jetcraft-accent);
 }
 
-.jetcraft-comp svg {
-    fill: currentColor;
-}
-
 /**
 * Jetcraft 컬러
 */
@@ -285,9 +281,6 @@ textarea
 /* 엘레멘터 필수 위젯 초기화 */
 .jetcraft-comp .elementor-widget-icon .elementor-icon-wrapper {
     line-height: 0;
-}
-.jetcraft-comp .elementor-widget-icon .elementor-icon svg {
-    fill: currentColor;
 }
 
 /* 엘레멘터 편집화면 불필요 여백 제거 */
